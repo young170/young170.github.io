@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[DS_TA] Sorting Algorithms"
+title: "[DS TA] Sorting Algorithms"
 subtitle: ""
-categories: DS_TA
+categories: DS TA
 tags: [DS]
 ---
 
