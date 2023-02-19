@@ -1,3 +1,11 @@
+---
+layout: post
+title: "[DS_TA] Sorting Algorithms"
+subtitle: ""
+categories: DS_TA
+tags: [DS]
+---
+
 ## 정렬 알고리즘이란?
 > 정렬 알고리즘은 목록의 요소들을 순서대로 넣는 알고리즘이다.
 -위키백과
