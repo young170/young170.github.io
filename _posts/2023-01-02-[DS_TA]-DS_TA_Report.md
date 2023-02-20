@@ -2,7 +2,7 @@
 layout: post
 title: "[DS TA] DS TA Report"
 subtitle: "Report of DS TA work."
-categories: DS TA
+categories: DS_TA
 tags: [DS, Linux]
 ---
 

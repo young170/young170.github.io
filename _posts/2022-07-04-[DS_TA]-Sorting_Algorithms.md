@@ -2,7 +2,7 @@
 layout: post
 title: "[DS TA] Sorting Algorithms"
 subtitle: ""
-categories: DS TA
+categories: DS_TA
 tags: [DS]
 ---
 
