@@ -7,7 +7,7 @@ tags: [DS, Linux]
 ---
 
 ### Introduction
-This is my notes on the order + details of lectures as a TA.
+This is my notes on the order + details of lectures/labs as a TA.
 
 ---
 
