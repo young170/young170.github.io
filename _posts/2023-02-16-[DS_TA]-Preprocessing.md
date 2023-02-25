@@ -2,7 +2,7 @@
 layout: post
 title: "[DS TA] Preprocessing"
 subtitle: "Creation of lab work - Preprocessing"
-categories: DS TA
+categories: DS_TA
 tags: [DS, Linux]
 ---
 
