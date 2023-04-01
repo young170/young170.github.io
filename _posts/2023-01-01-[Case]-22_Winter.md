@@ -1,0 +1,48 @@
+---
+layout: post
+title: "[Case] 22-Winter"
+subtitle: "Report of progress during the winter break of 22."
+categories: Case
+tags:
+---
+
+Pondered on what I should study during my winter vacation (2022 Dec ~ 2023 Feb) .
+
+Subjects to study :
+1) Operating Systems
+2) Embedded Systems
+3) Algorithms
+4) Compilers (Maybe..?)
+
+Others :
+1) Introductory to Machine Learning; through Python (https://github.com/idebtor/KMOOC-ML)
+2) Leetcode
+3) Fault Localization
+
+---
+
+### Introduction
+```
+I'm going to write my "Cases" blogs in Korean.
+This is becuase my vocabs are kinda limited in English..
+The "Cases" blogs are where I express my raw thoughts + emotions.
+Happy Coding~~
+```
+
+랩실 생활을 하며 지내는 것이 바쁘지만, 이렇게 내가 공부하고픈 것들로 surround 된것은 처음이라 신이난다.
+
+랩실은 SE (Software Engineering) 분야가 메인이다. 특히 APR (Automated Program Repair) 쪽으로 관심이 있는 것 같다. 나는 더 들어가 FL (Fault Localization) 에 흥미가 있다.
+
+간략하게 설명하면 :
+FL은 버그를 수정하기 위해 버그의 위치 (statement-level, method-level, etc; 많은 단계가 있다) 를 찾아내는 과정이다. 흥미가 생긴 이유는 단순 계산이 아니라 정말 연구자들이 사람이 디버깅하는 과정을 분석하여 수식으로 대입하고 있는 것이 보이기 때문이다. 그리고 그렇게하는 것이 좋은 결과를 (당연하게?) 가져온다. 내 꿈은 Unit Testing 처럼 (좀 다르지만, 기본 thinking이 비슷) 코드가 완성되기 전에 버그를 잡고 싶다. 버그는 빨리 잡을수록 좋기 때문이다. Study Link : (https://docs.google.com/document/d/1M12X3_DQCWhm42b10pVgn58u0G-a4cvxVts67sngLX0/edit)
+
+대학에 일찍 온 만큼 빨리 졸업을 하는 것이 목표가 아니라 정말 제대로 나의 기본을 다지고 더 나아가 나의 불타는 열정을 통해 컴퓨터공학이라는 무기를 단련하고 싶다.
+
+22-2 학기에 Computer Architecture & Organization (컴퓨터구조) 수업을 들으면서 정말 궁금증 폭발하는 것을 느꼈다. 나의 할것에 집중할 수 있는 방학에 수업 관련 수업 이후에 내용을 한번 공부해보자! 결단하였다.
+
+항상 생각으로, 마음속으로만 이런 말들을 하였는데 처음으로 기록한다. 여기까지 금방 쓰인걸 보면 아마 꾸준히 하지 않을까 싶다. 나를 위해 작성하는거라 공개할지는 모르겠다.
+
+시리즈 "Passion" 에서 내가 이번 방학동안 한 추억작업들을 기록할 예정이다. 
+이런 index 글들은 "Case" 에 넣고 "Passion" 에 있는 해당 기록들을 list 할 예정.
+
+새해 다짐으로 이 블로그가 끝나질 않길 바란다..
