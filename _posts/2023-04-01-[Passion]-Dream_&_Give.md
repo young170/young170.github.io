@@ -7,7 +7,7 @@ tags:
 ---
 ### Introduction
 
-This is my recording of what I've learned in the years 2015 ~ 2016 DrawDream.
+This is my recording of what I've learned in the years 2015 ~ 2016 그림드림.
 
 ---
 
@@ -21,7 +21,7 @@ Conclusively reasoning, the reader of this blog can guess I made it in so I'm go
 
 One of the major concepts I learned that changed my life was, "thinking outside the box". I know this may sound too familiar or boring, but it is what it is. At the start I was really rigid-minded. One of the teachers brought a box called, "imagination box". It was a fairly sized box with holes on two sides so that one could insert there hands. When it was my turn, I reached in and felt a squarish bag, and some zippers. Immediately, in my mind the thought that it was a crayon bag settled in. As the other members took their turn and described it, my thought didn't waver. The others all had the similar idea that it was a cover of some sort, I was the only one thinking it was a crayon bag. The embarrassing part was I so sure I started to draw the details.. Think of the embarrassement I had to myself when the answer was revealed!
 
-The other was, not saying "I screwed up"(망쳤다) and not using an eraser. One of the teachers really really emphasized on this. I guess the other members didn't experience the importance of this, but I understood it and am still living it. "I screwed up" or "it's ruined" were the most common phrases you could here when visiting the art room. I believe the words were based on their goal of making a project perfect. 
+The other was, not saying "I screwed up"(망쳤다) and not using an eraser. One of the teachers really really emphasized on this. I guess the other members didn't experience the importance of this, but I understood it and am still living it. "I screwed up" or "it's ruined" were the most common phrases you could here when visiting the art room. I believe the words were based on their goal of making a project perfect.
 
 ### Eagle
 
