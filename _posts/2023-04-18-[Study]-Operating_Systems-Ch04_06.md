@@ -43,6 +43,10 @@ This entry contains the notes of ch04 & ch06 of Operating Systems.
 * It is simpler to see the diagram
 
 <img src="../assets/images/posts/study/os/ch04_06/study-os-ch04_06-process_lifecycle.png" alt="isolated" width="500"/>
+<br>
+* Why does the zombie process exist?
+    * To indicate bugs. Bugs tend to stay in companies, a small error may lead to a bigger one.
+    * The kernel wants to show the developer something went wrong with the process.
 
 ### Process Data Structure
 <img src="../assets/images/posts/study/os/ch04_06/study-os-ch04_06-xv6_process.png" alt="isolated" width="500"/>
@@ -80,9 +84,10 @@ This entry contains the notes of ch04 & ch06 of Operating Systems.
     * Trap table<br>
     <img src="..\assets\images\posts\study\os\ch04_06\study-os-ch04_06-trap_table.jpg" alt="isolated" width="500"/>
 <br>
-
-### Policy & Mechanism
-
+    * "Program termination is not natural"
+        * As OS is virtual, a corrupt program doesn't corrupt the entire system.
+        * So it's not the application program that gets the privileges, but the kernel getting control over the application program.
+            * The application program yields control over.
 
 ### Etc.
 * Direct Memory Access
@@ -96,3 +101,11 @@ The DMA controller is responsible for managing the transfer of data between the 
 <br>
 > In operating systems, the DMA controller, northbridge, and southbridge are all important components of the system architecture that contribute to the efficient operation of the system. The operating system must be able to manage these components effectively to ensure efficient data transfer between devices and memory, and to provide a seamless user experience.
 * ~~임베 안들으면 barbarian~~
+* Some example problems one could try answering:
+1. Suppose that your system has a special hardware module. To interface application programs with the hardware module, you are asked to add a new system call to the kernel. Explain what you need to add and/or modify to accomplish this task
+    * My answer:
+        1. Define the system call
+        2. Modify the system call table
+        3. Implement the system call handler function
+        4. Update the kernel documentation
+        5. Test the new system call
