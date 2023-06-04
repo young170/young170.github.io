@@ -40,7 +40,7 @@ PDFs of my handwritten notes and lecture slides will be added.
 
      * Why?
 
-     > By providing a common interface, virtualization abstracts the underlying hardware and software details and provides a standardized way for programs to interact with the virtualized environment. This allows programs to be isolated from each other and from the underlying host, which enhances security, stability, and resource management.
+     > By providing a common interface, virtualization abstracts the underlying hardware and software details and provides a standardized way fo......................r programs to interact with the virtualized environment. This allows programs to be isolated from each other and from the underlying host, which enhances security, stability, and resource management.
      >
    * The kernel "helps" by containing libraries. These libraries have "helper" functions that provide control to HW devices, and communication between programs.
 2. Officer
