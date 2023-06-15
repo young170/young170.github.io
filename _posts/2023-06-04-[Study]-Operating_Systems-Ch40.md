@@ -9,7 +9,6 @@ tags: [Operating Systems]
 
 This entry contains the notes of ch40 of Operating Systems.
 
-
 ### Getting Started
 
 Things to remember before starting:
@@ -24,7 +23,6 @@ Things to remember before starting:
 * Allocation(bitmap)
 * Superblock
 
-
 ### Partitioning
 
 Methods to divide the resource.
@@ -34,17 +32,15 @@ Methods to divide the resource.
 * Dynamic partitioning
   * Uses **differing amounts**.
 
-
 ### Benefits of buffering
 
 * Batch updates.
 * Schedule better
 * Delays till removal -> avoiding
 
-
 ### Exercise
 
-1. Twelve direct pointers, as well as both a single and a double indirect block. Assuming a block size of 4 KB, and 4-byte pointers, this structure can accommodate a file of just over 4 GB in size (i.e., (12 + 1024 + 10242) × 4 KB). Can you figure out how big of a file can be handled with the addition of a triple-indirect block?
+1. Twelve direct pointers, as well as both a single and a double indirect block. Assuming a block size of 4 KB, and 4-byte pointers, this structure can accommodate a file of just over 4 GB in size (i.e., (12 + 1024 + 1024^2) × 4 KB). Can you figure out how big of a file can be handled with the addition of a triple-indirect block?
 
 ![1685874394535](image/2023-06-04-[Study]-Operating_Systems-Ch40/1685874394535.png)
 
@@ -55,18 +51,16 @@ A block is 4 KB, pointers are 4 bytes.
 * Direct Pointers
   * 12 direct pointers * pointer (4 bytes) = 48 bytes
 * Single Indirect Block:
-  * The block (4 KB) )contains (4 KB / 4 bytes = 1024) 1024 pointers.
-  * Each pointer (1024)) points to a block (4 KB), 4MB.
+  * The block (4 KB) contains (4 KB / 4 bytes = 1024) 1024 pointers.
+  * Each pointer (1024) points to a block (4 KB) = 4 MB.
 * Double Indirect Blocks:
   * Similar to the Single Indirect Blocks, has 1024 pointers.
   * Adding on a layer to Single Indirect Blocks, the 1024 pointers each have 1024 pointers that point to a data block (4 KB).
-  * Therefore, 1024 * (1024 * 4 KB) = 1024 * 4MB = 4 GB
+  * Therefore, 1024 * (1024 * 4 KB) = 1024 * 4 MB = 4 GB
 * Triple Indirect Blocks:
   * At this point you can see the pattern.
   * Simply add a layer of pointers each pointing to the successing layer of indirect/direct blocks.
-
-
-
+  * 1024 * (1024 * (1024 * 4 KB)) = 1024 * 4 GB = 4 TB
 
 ### Links & References
 
