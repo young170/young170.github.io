@@ -44,7 +44,7 @@ Methods to divide the resource.
 
 ### Exercise
 
-1. Twelve direct pointers, as well as both a single and a double indirect block. Assuming a block size of 4 KB, and 4-byte pointers, this structure can accom- modate a file of just over 4 GB in size (i.e., (12 + 1024 + 10242) × 4 KB). Can you figure out how big of a file can be handled with the addition of a triple-indirect block?
+1. Twelve direct pointers, as well as both a single and a double indirect block. Assuming a block size of 4 KB, and 4-byte pointers, this structure can accommodate a file of just over 4 GB in size (i.e., (12 + 1024 + 10242) × 4 KB). Can you figure out how big of a file can be handled with the addition of a triple-indirect block?
 
 ![1685874394535](image/2023-06-04-[Study]-Operating_Systems-Ch40/1685874394535.png)
 
