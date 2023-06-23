@@ -1,0 +1,117 @@
+---
+layout: post
+title: "[PS] LeetCode-2506"
+subtitle: "Problem Solving: 2506-Count Pairs of Similar Strings"
+categories: PS
+tags: [PS]
+---
+
+### Introduction
+Notes during problem solving.<br>
+
+### Problem Description
+You are given a **0-indexed** string array `words`.<br>
+Two strings are **similar** if they consist of the same characters.<br>
+* For example, `"abca"` and `"cba"` are similar since both consist of characters `'a'`, `'b'`, and `'c'`.<br>
+* However, `"abacba"` and `"bcfd"` are not similar since they do not consist of the same characters.<br>
+Return *the number of pairs* `(i, j)` *such that* `0 <= i < j <= word.length - 1` *and the two strings* `words[i]` *and* `words[j]` *are similar*.<br>
+
+### Code
+```
+void bitmask_init(char **words, int *bitmask, const int length_itr);
+int asc_cmp(const void *a, const void *b);
+void sort_wrapper(int *bitmask, const int length_itr);
+int cmp_word_similarity(int *bitmask, int length_itr);
+int similarPairs(char **words, int wordsSize);
+
+// provides a unique bit mask that keeps count of which letters are used.
+void
+bitmask_init(char **words, int *bitmask, const int length_itr)
+{
+    for (int i = 0; i < length_itr; i++) {
+        int word_length = strlen(words[i]);
+
+        for (int j = 0; j < word_length; j++) {
+            bitmask[i] = bitmask[i] | (1 << (words[i][j] - 'a'));
+        }
+    }
+}
+
+int
+asc_cmp(const void *a, const void *b)
+{
+    return (*(int *)a - *(int *)b);
+}
+
+void
+sort_wrapper(int *bitmask, const int length_itr)
+{
+    qsort(bitmask, length_itr, sizeof(int), asc_cmp);
+}
+
+int
+cmp_word_similarity(int *bitmask, int length_itr)
+{
+    int similar_cnt = 0;
+
+    for (int i = 0; i < length_itr; i++) {
+        for (int j = i + 1; j < length_itr; j++) {
+            if (bitmask[i] == bitmask[j]) {
+                similar_cnt++;
+            }
+        }
+    }
+
+    return similar_cnt;
+}
+
+int
+similarPairs(char **words, int wordsSize)
+{
+    int *bitmask = (int *)malloc(sizeof(int) * wordsSize);
+    memset(bitmask, 0, sizeof(int) * wordsSize);
+
+    bitmask_init(words, bitmask, wordsSize);
+    sort_wrapper(bitmask, wordsSize);
+    int similar_cnt = cmp_word_similarity(bitmask, wordsSize);
+
+    free(bitmask);
+    return similar_cnt;
+}
+```
+
+### Solution Explanation
+After allocating memory to `bitmask`, it sets all values to 0 using `memset()`.<br>
+Then, it is initialized by the OR operation. This sets the values corresponding to the alphabets to 1. Even for duplicates.<br>
+Sorts the `bitmask` to make it easier for comparison. Although the current algorithm doesn't optimize on this.<br>
+* Need a more effecient algorithm to compare. Utilize the sort.<br>
+Finally, counts the number of identical `bitmap`s.<br>
+
+### Code Explanation
+* Syntax<br>
+Followed the [GNU Coding Standards](https://www.gnu.org/prep/standards/html_node/Writing-C.html).
+* Functions<br>
+	* `bitmask_init()`: initializes the bit map by shifting 1s into the corresponding alphabet's value.<br>
+	* `asc_cmp()`: a comparison function. Provides a ASC sort.<br>
+	* `sort_wrapper()`: a wrapper function of the `qsort()`. Provides extensibility of the sort function.<br>
+	* `cmp_word_similarity()`: compares the number of identical `bitmask`s.<br>
+	* `similarPairs()`: the starting point of the functionality. finds the similar pairs of the given string list.<br>
+* Variables<br>
+	* `bitmask`: an int array of bitmasks. Each string has a bitmask that represents each distinct alphabet in it.<br>
+	* `similar_cnt`: holds the number of "similar" pairs of strings.<br>
+	* `wordsSize`: size of the array `words`.<br>
+	* `length_itr`: identical value as `wordsSize`. Personally, I don't like the name, but tried to name it a generic one.
+* Etc.<br>
+	* *other values were pre-defined, and used for consistency*.
+
+### Conclusion
+Second entry of my **[PS]** series.<br>
+During a call with [forYourJoy](https://github.com/forYourJoy), I again realized how important it is to practice my basics.<br>
+The actual reason I started this is because of the thought, "What is my greatest fear?"<br>
+My greatest fear is someone asking implement a simple file I/O program using your favourite language.<br>
+1. I don't know what my favourite language is..<br>
+2. I wasn't sure if I can implement the program..<br>
+
+File I/O is the one of the most fundamental strutures in coding.<br>
+So that is why I started LeetCoding from bit manipulation -> pointers -> file I/O.<br>
+Bon Voyage:)
