@@ -2,8 +2,8 @@
 layout: post
 title: "Undecidablity"
 subtitle: "Turing Machine, Universal Turing Machine, Decidable, Recognizable"
-categories: 
-tags: []
+categories: Study
+tags: [Computability]
 ---
 
 ## Turing's Proof
